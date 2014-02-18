@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457FF68918B394DB00DB3113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF68818B394DB00DB3113 /* Cocoa.framework */; };
+		457FF69318B394DB00DB3113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457FF69118B394DB00DB3113 /* InfoPlist.strings */; };
+		457FF69518B394DB00DB3113 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF69418B394DB00DB3113 /* main.m */; };
+		457FF69918B394DB00DB3113 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 457FF69718B394DB00DB3113 /* Credits.rtf */; };
+		457FF69C18B394DB00DB3113 /* TFGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF69B18B394DB00DB3113 /* TFGAppDelegate.m */; };
+		457FF69F18B394DB00DB3113 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 457FF69D18B394DB00DB3113 /* MainMenu.xib */; };
+		457FF6A118B394DB00DB3113 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457FF6A018B394DB00DB3113 /* Images.xcassets */; };
+		457FF6A818B394DB00DB3113 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF6A718B394DB00DB3113 /* XCTest.framework */; };
+		457FF6A918B394DB00DB3113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF68818B394DB00DB3113 /* Cocoa.framework */; };
+		457FF6B118B394DB00DB3113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457FF6AF18B394DB00DB3113 /* InfoPlist.strings */; };
+		457FF6B318B394DB00DB3113 /* TalkApp_MacOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		457FF6AA18B394DB00DB3113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 457FF67D18B394DB00DB3113 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 457FF68418B394DB00DB3113;
+			remoteInfo = "TalkApp-MacOSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		457FF68518B394DB00DB3113 /* TalkApp-MacOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalkApp-MacOSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		457FF68818B394DB00DB3113 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		457FF68B18B394DB00DB3113 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		457FF68C18B394DB00DB3113 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		457FF68D18B394DB00DB3113 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		457FF69018B394DB00DB3113 /* TalkApp-MacOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkApp-MacOSX-Info.plist"; sourceTree = "<group>"; };
+		457FF69218B394DB00DB3113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		457FF69418B394DB00DB3113 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		457FF69618B394DB00DB3113 /* TalkApp-MacOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkApp-MacOSX-Prefix.pch"; sourceTree = "<group>"; };
+		457FF69818B394DB00DB3113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		457FF69A18B394DB00DB3113 /* TFGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFGAppDelegate.h; sourceTree = "<group>"; };
+		457FF69B18B394DB00DB3113 /* TFGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFGAppDelegate.m; sourceTree = "<group>"; };
+		457FF69E18B394DB00DB3113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		457FF6A018B394DB00DB3113 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		457FF6A618B394DB00DB3113 /* TalkApp-MacOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TalkApp-MacOSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		457FF6A718B394DB00DB3113 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		457FF6AE18B394DB00DB3113 /* TalkApp-MacOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkApp-MacOSXTests-Info.plist"; sourceTree = "<group>"; };
+		457FF6B018B394DB00DB3113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkApp_MacOSXTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		457FF68218B394DB00DB3113 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FF68918B394DB00DB3113 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457FF6A318B394DB00DB3113 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FF6A918B394DB00DB3113 /* Cocoa.framework in Frameworks */,
+				457FF6A818B394DB00DB3113 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		457FF67C18B394DB00DB3113 = {
+			isa = PBXGroup;
+			children = (
+				457FF68E18B394DB00DB3113 /* TalkApp-MacOSX */,
+				457FF6AC18B394DB00DB3113 /* TalkApp-MacOSXTests */,
+				457FF68718B394DB00DB3113 /* Frameworks */,
+				457FF68618B394DB00DB3113 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		457FF68618B394DB00DB3113 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				457FF68518B394DB00DB3113 /* TalkApp-MacOSX.app */,
+				457FF6A618B394DB00DB3113 /* TalkApp-MacOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		457FF68718B394DB00DB3113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457FF68818B394DB00DB3113 /* Cocoa.framework */,
+				457FF6A718B394DB00DB3113 /* XCTest.framework */,
+				457FF68A18B394DB00DB3113 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		457FF68A18B394DB00DB3113 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457FF68B18B394DB00DB3113 /* AppKit.framework */,
+				457FF68C18B394DB00DB3113 /* CoreData.framework */,
+				457FF68D18B394DB00DB3113 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		457FF68E18B394DB00DB3113 /* TalkApp-MacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				457FF69A18B394DB00DB3113 /* TFGAppDelegate.h */,
+				457FF69B18B394DB00DB3113 /* TFGAppDelegate.m */,
+				457FF69D18B394DB00DB3113 /* MainMenu.xib */,
+				457FF6A018B394DB00DB3113 /* Images.xcassets */,
+				457FF68F18B394DB00DB3113 /* Supporting Files */,
+			);
+			path = "TalkApp-MacOSX";
+			sourceTree = "<group>";
+		};
+		457FF68F18B394DB00DB3113 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457FF69018B394DB00DB3113 /* TalkApp-MacOSX-Info.plist */,
+				457FF69118B394DB00DB3113 /* InfoPlist.strings */,
+				457FF69418B394DB00DB3113 /* main.m */,
+				457FF69618B394DB00DB3113 /* TalkApp-MacOSX-Prefix.pch */,
+				457FF69718B394DB00DB3113 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		457FF6AC18B394DB00DB3113 /* TalkApp-MacOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */,
+				457FF6AD18B394DB00DB3113 /* Supporting Files */,
+			);
+			path = "TalkApp-MacOSXTests";
+			sourceTree = "<group>";
+		};
+		457FF6AD18B394DB00DB3113 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457FF6AE18B394DB00DB3113 /* TalkApp-MacOSXTests-Info.plist */,
+				457FF6AF18B394DB00DB3113 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		457FF68418B394DB00DB3113 /* TalkApp-MacOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457FF6B618B394DB00DB3113 /* Build configuration list for PBXNativeTarget "TalkApp-MacOSX" */;
+			buildPhases = (
+				457FF68118B394DB00DB3113 /* Sources */,
+				457FF68218B394DB00DB3113 /* Frameworks */,
+				457FF68318B394DB00DB3113 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TalkApp-MacOSX";
+			productName = "TalkApp-MacOSX";
+			productReference = 457FF68518B394DB00DB3113 /* TalkApp-MacOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		457FF6A518B394DB00DB3113 /* TalkApp-MacOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457FF6B918B394DB00DB3113 /* Build configuration list for PBXNativeTarget "TalkApp-MacOSXTests" */;
+			buildPhases = (
+				457FF6A218B394DB00DB3113 /* Sources */,
+				457FF6A318B394DB00DB3113 /* Frameworks */,
+				457FF6A418B394DB00DB3113 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457FF6AB18B394DB00DB3113 /* PBXTargetDependency */,
+			);
+			name = "TalkApp-MacOSXTests";
+			productName = "TalkApp-MacOSXTests";
+			productReference = 457FF6A618B394DB00DB3113 /* TalkApp-MacOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		457FF67D18B394DB00DB3113 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TFG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "The Frontier Group";
+				TargetAttributes = {
+					457FF6A518B394DB00DB3113 = {
+						TestTargetID = 457FF68418B394DB00DB3113;
+					};
+				};
+			};
+			buildConfigurationList = 457FF68018B394DB00DB3113 /* Build configuration list for PBXProject "TalkApp-MacOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 457FF67C18B394DB00DB3113;
+			productRefGroup = 457FF68618B394DB00DB3113 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				457FF68418B394DB00DB3113 /* TalkApp-MacOSX */,
+				457FF6A518B394DB00DB3113 /* TalkApp-MacOSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		457FF68318B394DB00DB3113 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FF69318B394DB00DB3113 /* InfoPlist.strings in Resources */,
+				457FF6A118B394DB00DB3113 /* Images.xcassets in Resources */,
+				457FF69918B394DB00DB3113 /* Credits.rtf in Resources */,
+				457FF69F18B394DB00DB3113 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457FF6A418B394DB00DB3113 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FF6B118B394DB00DB3113 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		457FF68118B394DB00DB3113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FF69C18B394DB00DB3113 /* TFGAppDelegate.m in Sources */,
+				457FF69518B394DB00DB3113 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457FF6A218B394DB00DB3113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FF6B318B394DB00DB3113 /* TalkApp_MacOSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		457FF6AB18B394DB00DB3113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 457FF68418B394DB00DB3113 /* TalkApp-MacOSX */;
+			targetProxy = 457FF6AA18B394DB00DB3113 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		457FF69118B394DB00DB3113 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457FF69218B394DB00DB3113 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		457FF69718B394DB00DB3113 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457FF69818B394DB00DB3113 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		457FF69D18B394DB00DB3113 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457FF69E18B394DB00DB3113 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		457FF6AF18B394DB00DB3113 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457FF6B018B394DB00DB3113 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		457FF6B418B394DB00DB3113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		457FF6B518B394DB00DB3113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		457FF6B718B394DB00DB3113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkApp-MacOSX/TalkApp-MacOSX-Prefix.pch";
+				INFOPLIST_FILE = "TalkApp-MacOSX/TalkApp-MacOSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		457FF6B818B394DB00DB3113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkApp-MacOSX/TalkApp-MacOSX-Prefix.pch";
+				INFOPLIST_FILE = "TalkApp-MacOSX/TalkApp-MacOSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		457FF6BA18B394DB00DB3113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TalkApp-MacOSX.app/Contents/MacOS/TalkApp-MacOSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkApp-MacOSX/TalkApp-MacOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TalkApp-MacOSXTests/TalkApp-MacOSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		457FF6BB18B394DB00DB3113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TalkApp-MacOSX.app/Contents/MacOS/TalkApp-MacOSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkApp-MacOSX/TalkApp-MacOSX-Prefix.pch";
+				INFOPLIST_FILE = "TalkApp-MacOSXTests/TalkApp-MacOSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		457FF68018B394DB00DB3113 /* Build configuration list for PBXProject "TalkApp-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457FF6B418B394DB00DB3113 /* Debug */,
+				457FF6B518B394DB00DB3113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		457FF6B618B394DB00DB3113 /* Build configuration list for PBXNativeTarget "TalkApp-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457FF6B718B394DB00DB3113 /* Debug */,
+				457FF6B818B394DB00DB3113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		457FF6B918B394DB00DB3113 /* Build configuration list for PBXNativeTarget "TalkApp-MacOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457FF6BA18B394DB00DB3113 /* Debug */,
+				457FF6BB18B394DB00DB3113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 457FF67D18B394DB00DB3113 /* Project object */;
+}
