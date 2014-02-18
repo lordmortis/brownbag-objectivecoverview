@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString *lastname;
 @property (nonatomic) int age;
 
+@property (nonatomic, readonly) NSString *name;
+
 @end

@@ -10,4 +10,11 @@
 
 @implementation TFGComicCharacter
 
+-(NSString*)name {
+	if (_lastname && ([_lastname length] > 0))
+		return [NSString stringWithFormat:@"%@ %@", _firstname, _lastname];
+	else
+		return [NSString stringWithFormat:@"%@", _firstname];
+}
+
 @end
