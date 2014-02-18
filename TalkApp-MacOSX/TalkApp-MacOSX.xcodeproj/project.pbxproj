@@ -18,6 +18,7 @@
 		457FF6A918B394DB00DB3113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF68818B394DB00DB3113 /* Cocoa.framework */; };
 		457FF6B118B394DB00DB3113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457FF6AF18B394DB00DB3113 /* InfoPlist.strings */; };
 		457FF6B318B394DB00DB3113 /* TalkApp_MacOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */; };
+		457FF6BF18B3956C00DB3113 /* TFGComicCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF6BE18B3956C00DB3113 /* TFGComicCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		457FF6AE18B394DB00DB3113 /* TalkApp-MacOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkApp-MacOSXTests-Info.plist"; sourceTree = "<group>"; };
 		457FF6B018B394DB00DB3113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkApp_MacOSXTests.m; sourceTree = "<group>"; };
+		457FF6BD18B3956C00DB3113 /* TFGComicCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGComicCharacter.h; path = Models/TFGComicCharacter.h; sourceTree = "<group>"; };
+		457FF6BE18B3956C00DB3113 /* TFGComicCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFGComicCharacter.m; path = Models/TFGComicCharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		457FF68E18B394DB00DB3113 /* TalkApp-MacOSX */ = {
 			isa = PBXGroup;
 			children = (
+				457FF6BC18B3954800DB3113 /* Models */,
 				457FF69A18B394DB00DB3113 /* TFGAppDelegate.h */,
 				457FF69B18B394DB00DB3113 /* TFGAppDelegate.m */,
 				457FF69D18B394DB00DB3113 /* MainMenu.xib */,
@@ -152,6 +156,15 @@
 				457FF6AF18B394DB00DB3113 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		457FF6BC18B3954800DB3113 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				457FF6BD18B3956C00DB3113 /* TFGComicCharacter.h */,
+				457FF6BE18B3956C00DB3113 /* TFGComicCharacter.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457FF6BF18B3956C00DB3113 /* TFGComicCharacter.m in Sources */,
 				457FF69C18B394DB00DB3113 /* TFGAppDelegate.m in Sources */,
 				457FF69518B394DB00DB3113 /* main.m in Sources */,
 			);
@@ -465,6 +479,7 @@
 				457FF6B818B394DB00DB3113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		457FF6B918B394DB00DB3113 /* Build configuration list for PBXNativeTarget "TalkApp-MacOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +488,7 @@
 				457FF6BB18B394DB00DB3113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
