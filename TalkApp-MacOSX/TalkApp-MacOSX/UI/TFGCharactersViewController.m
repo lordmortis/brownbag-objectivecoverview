@@ -44,8 +44,10 @@
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
 	TFGComicCharacter *character = [_characters objectAtIndex: row];
-	NSLog(@"Character for row %i is %@", row, character);
-	return @"Nothing";
+	if (tableColumn == [tableView.tableColumns objectAtIndex:0])
+		return character.name;
+	else
+		return [NSString stringWithFormat:@"%i", character.age];
 }
 
 @end
