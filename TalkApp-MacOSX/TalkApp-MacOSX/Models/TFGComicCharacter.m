@@ -29,4 +29,8 @@
 		return [NSString stringWithFormat:@"%@", _firstname];
 }
 
+-(NSString*)description {
+	return [NSString stringWithFormat:@"%@ - Age: %i", [self name], _age];
+}
+
 @end

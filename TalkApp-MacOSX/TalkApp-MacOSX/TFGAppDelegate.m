@@ -18,7 +18,7 @@
 																	    lastname:@"Richards"
 																		 	 age:56];
 	
-	
+	NSLog(@"Character: %@", character);
 }
 
 @end
