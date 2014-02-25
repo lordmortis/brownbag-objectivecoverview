@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4559092018BCCDBA008CA304 /* TFGComicCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559091F18BCCDBA008CA304 /* TFGComicCharacters.m */; };
+		4559092718BCD3D0008CA304 /* TFGCharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559092618BCD3D0008CA304 /* TFGCharactersViewController.m */; };
 		457FF68918B394DB00DB3113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF68818B394DB00DB3113 /* Cocoa.framework */; };
 		457FF69318B394DB00DB3113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457FF69118B394DB00DB3113 /* InfoPlist.strings */; };
 		457FF69518B394DB00DB3113 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF69418B394DB00DB3113 /* main.m */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		4559091E18BCCDBA008CA304 /* TFGComicCharacters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGComicCharacters.h; path = Models/TFGComicCharacters.h; sourceTree = "<group>"; };
 		4559091F18BCCDBA008CA304 /* TFGComicCharacters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFGComicCharacters.m; path = Models/TFGComicCharacters.m; sourceTree = "<group>"; };
+		4559092518BCD3D0008CA304 /* TFGCharactersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGCharactersViewController.h; path = UI/TFGCharactersViewController.h; sourceTree = "<group>"; };
+		4559092618BCD3D0008CA304 /* TFGCharactersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFGCharactersViewController.m; path = UI/TFGCharactersViewController.m; sourceTree = "<group>"; };
 		457FF68518B394DB00DB3113 /* TalkApp-MacOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalkApp-MacOSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		457FF68818B394DB00DB3113 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		457FF68B18B394DB00DB3113 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4559092818BCD79F008CA304 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4559092518BCD3D0008CA304 /* TFGCharactersViewController.h */,
+				4559092618BCD3D0008CA304 /* TFGCharactersViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		457FF67C18B394DB00DB3113 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		457FF68E18B394DB00DB3113 /* TalkApp-MacOSX */ = {
 			isa = PBXGroup;
 			children = (
+				4559092818BCD79F008CA304 /* UI */,
 				457FF6BC18B3954800DB3113 /* Models */,
 				457FF69A18B394DB00DB3113 /* TFGAppDelegate.h */,
 				457FF69B18B394DB00DB3113 /* TFGAppDelegate.m */,
@@ -275,6 +288,7 @@
 				457FF69C18B394DB00DB3113 /* TFGAppDelegate.m in Sources */,
 				457FF69518B394DB00DB3113 /* main.m in Sources */,
 				4559092018BCCDBA008CA304 /* TFGComicCharacters.m in Sources */,
+				4559092718BCD3D0008CA304 /* TFGCharactersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
