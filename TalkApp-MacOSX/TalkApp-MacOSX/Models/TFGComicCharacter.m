@@ -10,6 +10,18 @@
 
 @implementation TFGComicCharacter
 
+-(id)initWithFirstname:(NSString *)firstname
+			  lastname:(NSString *)lastname
+				   age:(int)age {
+	self = [super init];
+	if (self) {
+		_firstname = firstname;
+		_lastname = lastname;
+		_age = age;
+	}
+	return self;
+}
+
 -(NSString*)name {
 	if (_lastname && ([_lastname length] > 0))
 		return [NSString stringWithFormat:@"%@ %@", _firstname, _lastname];

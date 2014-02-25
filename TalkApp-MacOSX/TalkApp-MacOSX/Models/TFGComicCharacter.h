@@ -16,4 +16,8 @@
 
 @property (nonatomic, readonly) NSString *name;
 
+-(id)initWithFirstname:(NSString*)firstname
+			  lastname:(NSString*)lastname
+				   age:(int)age;
+
 @end
