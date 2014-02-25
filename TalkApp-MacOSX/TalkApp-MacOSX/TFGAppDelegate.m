@@ -13,12 +13,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application
-	
-	TFGComicCharacter *character = 	[[TFGComicCharacter alloc] initWithFirstname:@"Reed"
-																	    lastname:@"Richards"
-																		 	 age:56];
-	
-	NSLog(@"Character: %@", character);
 }
 
 @end
