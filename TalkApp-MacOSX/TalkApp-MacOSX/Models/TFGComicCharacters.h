@@ -19,4 +19,8 @@
 							 lastname:(NSString*)lastname
 								  age:(int)age;
 
+-(NSInteger) count;
+
+-(TFGComicCharacter*)objectAtIndex:(NSInteger)index;
+
 @end

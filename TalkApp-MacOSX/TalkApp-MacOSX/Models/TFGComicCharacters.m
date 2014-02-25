@@ -32,4 +32,12 @@
 	[_characters addObject:character];
 }
 
+-(NSInteger) count {
+	return [_characters count];
+}
+
+-(TFGComicCharacter*)objectAtIndex:(NSInteger)index {
+	return [_characters objectAtIndex:index];
+}
+
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "TFGComicCharacters.h"
 
-@interface TFGCharactersViewController : NSViewController
+@interface TFGCharactersViewController : NSViewController <NSTableViewDataSource>
+
+@property (nonatomic, strong) TFGComicCharacters* characters;
+
+
 
 @end
