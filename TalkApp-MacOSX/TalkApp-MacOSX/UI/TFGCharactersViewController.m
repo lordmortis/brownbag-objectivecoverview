@@ -36,6 +36,8 @@
 	[_characters addComicCharacterWithFirstname:@"Natasha"
 									   lastname:@"Romanov"
 											age:-1];
+
+	[_characterWindow setReleasedWhenClosed:false];
 }
 
 -(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
@@ -54,9 +56,11 @@
 	NSInteger row = _tableView.selectedRow;
 	if (row > -1) {
 		TFGComicCharacter *character = [_characters objectAtIndex:row];
-		NSLog(@"Selected: %@", character);
+		[_name setStringValue:character.name];
+		[_age setIntegerValue:character.age];
+		[_characterWindow makeKeyAndOrderFront:self];
 	} else {
-		NSLog(@"Deselected");
+		[_characterWindow close];
 	}
 }
 
