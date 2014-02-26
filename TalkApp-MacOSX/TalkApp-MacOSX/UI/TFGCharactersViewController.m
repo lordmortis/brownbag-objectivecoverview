@@ -50,4 +50,14 @@
 		return [NSString stringWithFormat:@"%i", character.age];
 }
 
+- (void)tableViewSelectionDidChange:(NSNotification *)notification {
+	NSInteger row = _tableView.selectedRow;
+	if (row > -1) {
+		TFGComicCharacter *character = [_characters objectAtIndex:row];
+		NSLog(@"Selected: %@", character);
+	} else {
+		NSLog(@"Deselected");
+	}
+}
+
 @end

@@ -9,9 +9,10 @@
 #import <Cocoa/Cocoa.h>
 #import "TFGComicCharacters.h"
 
-@interface TFGCharactersViewController : NSViewController <NSTableViewDataSource>
+@interface TFGCharactersViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 @property (nonatomic, strong) TFGComicCharacters* characters;
+@property (weak) IBOutlet NSTableView *tableView;
 
 
 
