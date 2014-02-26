@@ -7,7 +7,6 @@
 //
 
 #import "TFGAppDelegate.h"
-#import "TFGComicCharacter.h"
 
 @implementation TFGAppDelegate
 

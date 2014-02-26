@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4559092018BCCDBA008CA304 /* TFGComicCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559091F18BCCDBA008CA304 /* TFGComicCharacters.m */; };
 		4559092718BCD3D0008CA304 /* TFGCharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559092618BCD3D0008CA304 /* TFGCharactersViewController.m */; };
 		457FF68918B394DB00DB3113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF68818B394DB00DB3113 /* Cocoa.framework */; };
 		457FF69318B394DB00DB3113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457FF69118B394DB00DB3113 /* InfoPlist.strings */; };
@@ -20,7 +19,7 @@
 		457FF6A918B394DB00DB3113 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FF68818B394DB00DB3113 /* Cocoa.framework */; };
 		457FF6B118B394DB00DB3113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 457FF6AF18B394DB00DB3113 /* InfoPlist.strings */; };
 		457FF6B318B394DB00DB3113 /* TalkApp_MacOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */; };
-		457FF6BF18B3956C00DB3113 /* TFGComicCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FF6BE18B3956C00DB3113 /* TFGComicCharacter.m */; };
+		45EF720018BE2607004F3A5A /* libTalkLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF71EC18BE2245004F3A5A /* libTalkLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +30,23 @@
 			remoteGlobalIDString = 457FF68418B394DB00DB3113;
 			remoteInfo = "TalkApp-MacOSX";
 		};
+		45EF71EB18BE2245004F3A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EF71E618BE2244004F3A5A /* TalkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45EF71BC18BE2244004F3A5A;
+			remoteInfo = TalkLib;
+		};
+		45EF71ED18BE2245004F3A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EF71E618BE2244004F3A5A /* TalkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45EF71CF18BE2244004F3A5A;
+			remoteInfo = TalkLibTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4559091E18BCCDBA008CA304 /* TFGComicCharacters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGComicCharacters.h; path = Models/TFGComicCharacters.h; sourceTree = "<group>"; };
-		4559091F18BCCDBA008CA304 /* TFGComicCharacters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFGComicCharacters.m; path = Models/TFGComicCharacters.m; sourceTree = "<group>"; };
 		4559092518BCD3D0008CA304 /* TFGCharactersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGCharactersViewController.h; path = UI/TFGCharactersViewController.h; sourceTree = "<group>"; };
 		4559092618BCD3D0008CA304 /* TFGCharactersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFGCharactersViewController.m; path = UI/TFGCharactersViewController.m; sourceTree = "<group>"; };
 		457FF68518B394DB00DB3113 /* TalkApp-MacOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalkApp-MacOSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,8 +68,7 @@
 		457FF6AE18B394DB00DB3113 /* TalkApp-MacOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkApp-MacOSXTests-Info.plist"; sourceTree = "<group>"; };
 		457FF6B018B394DB00DB3113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		457FF6B218B394DB00DB3113 /* TalkApp_MacOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkApp_MacOSXTests.m; sourceTree = "<group>"; };
-		457FF6BD18B3956C00DB3113 /* TFGComicCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGComicCharacter.h; path = Models/TFGComicCharacter.h; sourceTree = "<group>"; };
-		457FF6BE18B3956C00DB3113 /* TFGComicCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFGComicCharacter.m; path = Models/TFGComicCharacter.m; sourceTree = "<group>"; };
+		45EF71E618BE2244004F3A5A /* TalkLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TalkLib.xcodeproj; path = TalkLib/TalkLib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				457FF68918B394DB00DB3113 /* Cocoa.framework in Frameworks */,
+				45EF720018BE2607004F3A5A /* libTalkLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +105,7 @@
 		457FF67C18B394DB00DB3113 = {
 			isa = PBXGroup;
 			children = (
+				45EF71E618BE2244004F3A5A /* TalkLib.xcodeproj */,
 				457FF68E18B394DB00DB3113 /* TalkApp-MacOSX */,
 				457FF6AC18B394DB00DB3113 /* TalkApp-MacOSXTests */,
 				457FF68718B394DB00DB3113 /* Frameworks */,
@@ -177,12 +189,17 @@
 		457FF6BC18B3954800DB3113 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				457FF6BD18B3956C00DB3113 /* TFGComicCharacter.h */,
-				457FF6BE18B3956C00DB3113 /* TFGComicCharacter.m */,
-				4559091E18BCCDBA008CA304 /* TFGComicCharacters.h */,
-				4559091F18BCCDBA008CA304 /* TFGComicCharacters.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		45EF71E718BE2244004F3A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EF71EC18BE2245004F3A5A /* libTalkLib.a */,
+				45EF71EE18BE2245004F3A5A /* TalkLibTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +266,12 @@
 			mainGroup = 457FF67C18B394DB00DB3113;
 			productRefGroup = 457FF68618B394DB00DB3113 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 45EF71E718BE2244004F3A5A /* Products */;
+					ProjectRef = 45EF71E618BE2244004F3A5A /* TalkLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				457FF68418B394DB00DB3113 /* TalkApp-MacOSX */,
@@ -256,6 +279,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		45EF71EC18BE2245004F3A5A /* libTalkLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTalkLib.a;
+			remoteRef = 45EF71EB18BE2245004F3A5A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45EF71EE18BE2245004F3A5A /* TalkLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TalkLibTests.xctest;
+			remoteRef = 45EF71ED18BE2245004F3A5A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		457FF68318B394DB00DB3113 /* Resources */ = {
@@ -284,10 +324,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457FF6BF18B3956C00DB3113 /* TFGComicCharacter.m in Sources */,
 				457FF69C18B394DB00DB3113 /* TFGAppDelegate.m in Sources */,
 				457FF69518B394DB00DB3113 /* main.m in Sources */,
-				4559092018BCCDBA008CA304 /* TFGComicCharacters.m in Sources */,
 				4559092718BCD3D0008CA304 /* TFGCharactersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +460,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalkApp-MacOSX/TalkApp-MacOSX-Prefix.pch";
 				INFOPLIST_FILE = "TalkApp-MacOSX/TalkApp-MacOSX-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -435,6 +474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalkApp-MacOSX/TalkApp-MacOSX-Prefix.pch";
 				INFOPLIST_FILE = "TalkApp-MacOSX/TalkApp-MacOSX-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

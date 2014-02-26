@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "TFGComicCharacters.h"
+#import "../../TalkLib/TFGComicCharacters.h"
 
 @interface TFGCharactersViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 

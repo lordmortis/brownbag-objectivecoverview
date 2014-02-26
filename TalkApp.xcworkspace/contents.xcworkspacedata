@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TalkApp-MacOSX/TalkLib/TalkLib.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TalkApp-MacOSX/TalkApp-MacOSX.xcodeproj">
    </FileRef>
 </Workspace>
