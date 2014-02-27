@@ -109,8 +109,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-//        NSDate *object = _objects[indexPath.row];
-//        self.detailViewController.detailItem = object;
+		_detailViewController.character = [_characters objectAtIndex:indexPath.row];
     }
 }
 
@@ -118,8 +117,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = _objects[indexPath.row];
-//        [[segue destinationViewController] setDetailItem:object];
+		[[segue destinationViewController] setCharacter:[_characters objectAtIndex:indexPath.row]];
     }
 }
 

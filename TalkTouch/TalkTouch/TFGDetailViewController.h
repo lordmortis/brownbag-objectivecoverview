@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../../TalkApp-MacOSX/TalkLib/TFGComicCharacter.h"
 
 @interface TFGDetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) TFGComicCharacter	*character;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
