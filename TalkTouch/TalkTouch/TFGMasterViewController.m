@@ -8,9 +8,10 @@
 
 #import "TFGMasterViewController.h"
 #import "TFGDetailViewController.h"
+#import "../../TalkApp-MacOSX/TalkLib/TFGComicCharacters.h"
 
 @interface TFGMasterViewController () {
-    NSMutableArray *_objects;
+	TFGComicCharacters *_characters;
 }
 @end
 
@@ -22,7 +23,29 @@
 	    self.clearsSelectionOnViewWillAppear = NO;
 	    self.preferredContentSize = CGSizeMake(320.0, 600.0);
 	}
-    [super awakeFromNib];
+	_characters = [[TFGComicCharacters alloc] init];
+
+	[_characters addComicCharacterWithFirstname:@"Reed"
+									   lastname:@"Richards"
+											age:56];
+	
+	[_characters addComicCharacterWithFirstname:@"Tony"
+									   lastname:@"Stark"
+											age:45];
+	
+	[_characters addComicCharacterWithFirstname:@"Steve"
+									   lastname:@"Rogers"
+											age:80];
+	
+	[_characters addComicCharacterWithFirstname:@"Thor"
+									   lastname:nil
+											age:999];
+	
+	[_characters addComicCharacterWithFirstname:@"Natasha"
+									   lastname:@"Romanov"
+											age:-1];
+    
+	[super awakeFromNib];
 }
 
 - (void)viewDidLoad
@@ -31,8 +54,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-	UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-	self.navigationItem.rightBarButtonItem = addButton;
 	self.detailViewController = (TFGDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -40,16 +61,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -61,32 +72,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return _objects.count;
+	return [_characters count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-	NSDate *object = _objects[indexPath.row];
-	cell.textLabel.text = [object description];
+	TFGComicCharacter *character = [_characters objectAtIndex:indexPath.row];
+	cell.textLabel.text = [character name];
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
+    return NO;
 }
 
 /*
@@ -108,8 +109,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = _objects[indexPath.row];
-        self.detailViewController.detailItem = object;
+//        NSDate *object = _objects[indexPath.row];
+//        self.detailViewController.detailItem = object;
     }
 }
 
@@ -117,8 +118,8 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+//        NSDate *object = _objects[indexPath.row];
+//        [[segue destinationViewController] setDetailItem:object];
     }
 }
 
