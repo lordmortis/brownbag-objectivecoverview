@@ -7,7 +7,6 @@
 //
 
 #import "TFGMasterViewController.h"
-
 #import "TFGDetailViewController.h"
 
 @interface TFGMasterViewController () {

@@ -7,4 +7,7 @@
    <FileRef
       location = "group:TalkApp-MacOSX/TalkApp-MacOSX.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TalkApp-MacOSX/TalkLib/TalkLib/../../../TalkTouch/TalkTouch.xcodeproj">
+   </FileRef>
 </Workspace>

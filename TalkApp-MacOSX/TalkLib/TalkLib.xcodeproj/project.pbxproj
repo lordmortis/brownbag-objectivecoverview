@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4500BA2B18BEF28A00535541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500BA2A18BEF28A00535541 /* Foundation.framework */; };
+		4500BA3018BEF28A00535541 /* TalkLib_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4500BA2F18BEF28A00535541 /* TalkLib_iOS.h */; };
+		4500BA3218BEF28A00535541 /* TalkLib_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500BA3118BEF28A00535541 /* TalkLib_iOS.m */; };
+		4500BA3818BEF28A00535541 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF71D018BE2244004F3A5A /* XCTest.framework */; };
+		4500BA3918BEF28A00535541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500BA2A18BEF28A00535541 /* Foundation.framework */; };
+		4500BA3B18BEF28A00535541 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500BA3A18BEF28A00535541 /* UIKit.framework */; };
+		4500BA3E18BEF28A00535541 /* libTalkLib-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500BA2918BEF28A00535541 /* libTalkLib-iOS.a */; };
+		4500BA4418BEF28A00535541 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4500BA4218BEF28A00535541 /* InfoPlist.strings */; };
+		4500BA4618BEF28A00535541 /* TalkLib_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500BA4518BEF28A00535541 /* TalkLib_iOSTests.m */; };
+		4500BA4D18BEF29E00535541 /* TFGComicCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EF71F018BE22FE004F3A5A /* TFGComicCharacter.m */; };
+		4500BA4E18BEF2A400535541 /* TFGComicCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EF71F218BE22FE004F3A5A /* TFGComicCharacters.m */; };
 		45EF71C018BE2244004F3A5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF71BF18BE2244004F3A5A /* Cocoa.framework */; };
 		45EF71D118BE2244004F3A5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF71D018BE2244004F3A5A /* XCTest.framework */; };
 		45EF71D218BE2244004F3A5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF71BF18BE2244004F3A5A /* Cocoa.framework */; };
@@ -20,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4500BA3C18BEF28A00535541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45EF71B418BE2244004F3A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4500BA2818BEF28A00535541;
+			remoteInfo = "TalkLib-iOS";
+		};
 		45EF71D318BE2244004F3A5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45EF71B418BE2244004F3A5A /* Project object */;
@@ -29,7 +47,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4500BA2718BEF28A00535541 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4500BA3018BEF28A00535541 /* TalkLib_iOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4500BA2918BEF28A00535541 /* libTalkLib-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTalkLib-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4500BA2A18BEF28A00535541 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4500BA2E18BEF28A00535541 /* TalkLib-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkLib-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		4500BA2F18BEF28A00535541 /* TalkLib_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TalkLib_iOS.h; sourceTree = "<group>"; };
+		4500BA3118BEF28A00535541 /* TalkLib_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkLib_iOS.m; sourceTree = "<group>"; };
+		4500BA3718BEF28A00535541 /* TalkLib-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TalkLib-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4500BA3A18BEF28A00535541 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4500BA4118BEF28A00535541 /* TalkLib-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalkLib-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		4500BA4318BEF28A00535541 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4500BA4518BEF28A00535541 /* TalkLib_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalkLib_iOSTests.m; sourceTree = "<group>"; };
 		45EF71BC18BE2244004F3A5A /* libTalkLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTalkLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EF71BF18BE2244004F3A5A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		45EF71C218BE2244004F3A5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +88,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4500BA2618BEF28A00535541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4500BA2B18BEF28A00535541 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4500BA3418BEF28A00535541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4500BA3818BEF28A00535541 /* XCTest.framework in Frameworks */,
+				4500BA3E18BEF28A00535541 /* libTalkLib-iOS.a in Frameworks */,
+				4500BA3B18BEF28A00535541 /* UIKit.framework in Frameworks */,
+				4500BA3918BEF28A00535541 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45EF71B918BE2244004F3A5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,11 +128,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4500BA2C18BEF28A00535541 /* TalkLib-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4500BA2F18BEF28A00535541 /* TalkLib_iOS.h */,
+				4500BA3118BEF28A00535541 /* TalkLib_iOS.m */,
+				4500BA2D18BEF28A00535541 /* Supporting Files */,
+			);
+			path = "TalkLib-iOS";
+			sourceTree = "<group>";
+		};
+		4500BA2D18BEF28A00535541 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4500BA2E18BEF28A00535541 /* TalkLib-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4500BA3F18BEF28A00535541 /* TalkLib-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4500BA4518BEF28A00535541 /* TalkLib_iOSTests.m */,
+				4500BA4018BEF28A00535541 /* Supporting Files */,
+			);
+			path = "TalkLib-iOSTests";
+			sourceTree = "<group>";
+		};
+		4500BA4018BEF28A00535541 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4500BA4118BEF28A00535541 /* TalkLib-iOSTests-Info.plist */,
+				4500BA4218BEF28A00535541 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		45EF71B318BE2244004F3A5A = {
 			isa = PBXGroup;
 			children = (
 				45EF71C518BE2244004F3A5A /* TalkLib */,
 				45EF71D618BE2244004F3A5A /* TalkLibTests */,
+				4500BA2C18BEF28A00535541 /* TalkLib-iOS */,
+				4500BA3F18BEF28A00535541 /* TalkLib-iOSTests */,
 				45EF71BE18BE2244004F3A5A /* Frameworks */,
 				45EF71BD18BE2244004F3A5A /* Products */,
 			);
@@ -83,6 +181,8 @@
 			children = (
 				45EF71BC18BE2244004F3A5A /* libTalkLib.a */,
 				45EF71CF18BE2244004F3A5A /* TalkLibTests.xctest */,
+				4500BA2918BEF28A00535541 /* libTalkLib-iOS.a */,
+				4500BA3718BEF28A00535541 /* TalkLib-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +192,8 @@
 			children = (
 				45EF71BF18BE2244004F3A5A /* Cocoa.framework */,
 				45EF71D018BE2244004F3A5A /* XCTest.framework */,
+				4500BA2A18BEF28A00535541 /* Foundation.framework */,
+				4500BA3A18BEF28A00535541 /* UIKit.framework */,
 				45EF71C118BE2244004F3A5A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -151,6 +253,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4500BA2818BEF28A00535541 /* TalkLib-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4500BA4718BEF28A00535541 /* Build configuration list for PBXNativeTarget "TalkLib-iOS" */;
+			buildPhases = (
+				4500BA2518BEF28A00535541 /* Sources */,
+				4500BA2618BEF28A00535541 /* Frameworks */,
+				4500BA2718BEF28A00535541 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TalkLib-iOS";
+			productName = "TalkLib-iOS";
+			productReference = 4500BA2918BEF28A00535541 /* libTalkLib-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4500BA3618BEF28A00535541 /* TalkLib-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4500BA4A18BEF28A00535541 /* Build configuration list for PBXNativeTarget "TalkLib-iOSTests" */;
+			buildPhases = (
+				4500BA3318BEF28A00535541 /* Sources */,
+				4500BA3418BEF28A00535541 /* Frameworks */,
+				4500BA3518BEF28A00535541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4500BA3D18BEF28A00535541 /* PBXTargetDependency */,
+			);
+			name = "TalkLib-iOSTests";
+			productName = "TalkLib-iOSTests";
+			productReference = 4500BA3718BEF28A00535541 /* TalkLib-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		45EF71BB18BE2244004F3A5A /* TalkLib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45EF71E018BE2244004F3A5A /* Build configuration list for PBXNativeTarget "TalkLib" */;
@@ -209,11 +346,21 @@
 			targets = (
 				45EF71BB18BE2244004F3A5A /* TalkLib */,
 				45EF71CE18BE2244004F3A5A /* TalkLibTests */,
+				4500BA2818BEF28A00535541 /* TalkLib-iOS */,
+				4500BA3618BEF28A00535541 /* TalkLib-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4500BA3518BEF28A00535541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4500BA4418BEF28A00535541 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45EF71CD18BE2244004F3A5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +372,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4500BA2518BEF28A00535541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4500BA4E18BEF2A400535541 /* TFGComicCharacters.m in Sources */,
+				4500BA3218BEF28A00535541 /* TalkLib_iOS.m in Sources */,
+				4500BA4D18BEF29E00535541 /* TFGComicCharacter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4500BA3318BEF28A00535541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4500BA4618BEF28A00535541 /* TalkLib_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45EF71B818BE2244004F3A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +410,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4500BA3D18BEF28A00535541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4500BA2818BEF28A00535541 /* TalkLib-iOS */;
+			targetProxy = 4500BA3C18BEF28A00535541 /* PBXContainerItemProxy */;
+		};
 		45EF71D418BE2244004F3A5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45EF71BB18BE2244004F3A5A /* TalkLib */;
@@ -253,6 +423,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4500BA4218BEF28A00535541 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4500BA4318BEF28A00535541 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		45EF71D918BE2244004F3A5A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -264,6 +442,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4500BA4818BEF28A00535541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/TalkLib_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkLib-iOS/TalkLib-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4500BA4918BEF28A00535541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/TalkLib_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkLib-iOS/TalkLib-iOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4500BA4B18BEF28A00535541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkLib-iOS/TalkLib-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TalkLib-iOSTests/TalkLib-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4500BA4C18BEF28A00535541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalkLib-iOS/TalkLib-iOS-Prefix.pch";
+				INFOPLIST_FILE = "TalkLib-iOSTests/TalkLib-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		45EF71DE18BE2244004F3A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +651,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4500BA4718BEF28A00535541 /* Build configuration list for PBXNativeTarget "TalkLib-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4500BA4818BEF28A00535541 /* Debug */,
+				4500BA4918BEF28A00535541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4500BA4A18BEF28A00535541 /* Build configuration list for PBXNativeTarget "TalkLib-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4500BA4B18BEF28A00535541 /* Debug */,
+				4500BA4C18BEF28A00535541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		45EF71B718BE2244004F3A5A /* Build configuration list for PBXProject "TalkLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -407,6 +683,7 @@
 				45EF71E218BE2244004F3A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45EF71E318BE2244004F3A5A /* Build configuration list for PBXNativeTarget "TalkLibTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +692,7 @@
 				45EF71E518BE2244004F3A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

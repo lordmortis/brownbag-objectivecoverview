@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45E9637818BEF72C00ECC73E /* libTalkLib-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4500BA5B18BEF2E600535541 /* libTalkLib-iOS.a */; };
 		45EF720E18BE27F6004F3A5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF720D18BE27F6004F3A5A /* Foundation.framework */; };
 		45EF721018BE27F6004F3A5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF720F18BE27F6004F3A5A /* CoreGraphics.framework */; };
 		45EF721218BE27F6004F3A5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EF721118BE27F6004F3A5A /* UIKit.framework */; };
@@ -26,6 +27,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4500BA5618BEF2E600535541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45EF71BC18BE2244004F3A5A;
+			remoteInfo = TalkLib;
+		};
+		4500BA5818BEF2E600535541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45EF71CF18BE2244004F3A5A;
+			remoteInfo = TalkLibTests;
+		};
+		4500BA5A18BEF2E600535541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4500BA2918BEF28A00535541;
+			remoteInfo = "TalkLib-iOS";
+		};
+		4500BA5C18BEF2E600535541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4500BA3718BEF28A00535541;
+			remoteInfo = "TalkLib-iOSTests";
+		};
+		4500BA5E18BEF2ED00535541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4500BA2818BEF28A00535541;
+			remoteInfo = "TalkLib-iOS";
+		};
 		45EF723618BE27F6004F3A5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45EF720218BE27F6004F3A5A /* Project object */;
@@ -36,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TalkLib.xcodeproj; path = "../TalkApp-MacOSX/TalkLib/TalkLib.xcodeproj"; sourceTree = "<group>"; };
+		456FD9C718BEC8DE00227AEA /* libTalkLib-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTalkLib-iOS.a"; path = "../TalkApp-MacOSX/TalkLib/build/Debug-iphoneos/libTalkLib-iOS.a"; sourceTree = "<group>"; };
 		45EF720A18BE27F6004F3A5A /* TalkTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EF720D18BE27F6004F3A5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45EF720F18BE27F6004F3A5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E9637818BEF72C00ECC73E /* libTalkLib-iOS.a in Frameworks */,
 				45EF721018BE27F6004F3A5A /* CoreGraphics.framework in Frameworks */,
 				45EF721218BE27F6004F3A5A /* UIKit.framework in Frameworks */,
 				45EF720E18BE27F6004F3A5A /* Foundation.framework in Frameworks */,
@@ -84,9 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4500BA5018BEF2E600535541 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4500BA5718BEF2E600535541 /* libTalkLib.a */,
+				4500BA5918BEF2E600535541 /* TalkLibTests.xctest */,
+				4500BA5B18BEF2E600535541 /* libTalkLib-iOS.a */,
+				4500BA5D18BEF2E600535541 /* TalkLib-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		45EF720118BE27F6004F3A5A = {
 			isa = PBXGroup;
 			children = (
+				4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */,
 				45EF721318BE27F6004F3A5A /* TalkTouch */,
 				45EF723818BE27F6004F3A5A /* TalkTouchTests */,
 				45EF720C18BE27F6004F3A5A /* Frameworks */,
@@ -106,6 +157,7 @@
 		45EF720C18BE27F6004F3A5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				456FD9C718BEC8DE00227AEA /* libTalkLib-iOS.a */,
 				45EF720D18BE27F6004F3A5A /* Foundation.framework */,
 				45EF720F18BE27F6004F3A5A /* CoreGraphics.framework */,
 				45EF721118BE27F6004F3A5A /* UIKit.framework */,
@@ -174,6 +226,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4500BA5F18BEF2ED00535541 /* PBXTargetDependency */,
 			);
 			name = TalkTouch;
 			productName = TalkTouch;
@@ -224,6 +277,12 @@
 			mainGroup = 45EF720118BE27F6004F3A5A;
 			productRefGroup = 45EF720B18BE27F6004F3A5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4500BA5018BEF2E600535541 /* Products */;
+					ProjectRef = 4500BA4F18BEF2E600535541 /* TalkLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				45EF720918BE27F6004F3A5A /* TalkTouch */,
@@ -231,6 +290,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4500BA5718BEF2E600535541 /* libTalkLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTalkLib.a;
+			remoteRef = 4500BA5618BEF2E600535541 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4500BA5918BEF2E600535541 /* TalkLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TalkLibTests.xctest;
+			remoteRef = 4500BA5818BEF2E600535541 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4500BA5B18BEF2E600535541 /* libTalkLib-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTalkLib-iOS.a";
+			remoteRef = 4500BA5A18BEF2E600535541 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4500BA5D18BEF2E600535541 /* TalkLib-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "TalkLib-iOSTests.xctest";
+			remoteRef = 4500BA5C18BEF2E600535541 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		45EF720818BE27F6004F3A5A /* Resources */ = {
@@ -277,6 +367,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4500BA5F18BEF2ED00535541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TalkLib-iOS";
+			targetProxy = 4500BA5E18BEF2ED00535541 /* PBXContainerItemProxy */;
+		};
 		45EF723718BE27F6004F3A5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 45EF720918BE27F6004F3A5A /* TalkTouch */;
@@ -481,6 +576,7 @@
 				45EF724418BE27F6004F3A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45EF724518BE27F6004F3A5A /* Build configuration list for PBXNativeTarget "TalkTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +585,7 @@
 				45EF724718BE27F6004F3A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
